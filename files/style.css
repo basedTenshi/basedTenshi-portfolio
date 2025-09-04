@@ -1,0 +1,88 @@
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topLeftName {
+    color: white;
+}
+
+.navBar {
+    display: flex;
+    border: 1px solid black;
+    background-color: steelblue;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.Intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Hi {
+    display: flex;
+    color: steelblue;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    width: auto;
+}
+
+.IntroText {
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+}
+.IntroParagraph {
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    text-align: justify;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+.Space {
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.SkillsText {
+    display: flex;
+    justify-content: center;
+    color: steelblue;
+}
+
+.Skills {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    border: 5px solid black;
+}
+
+.Info {
+    display: flex;
+}
+
+.navBarButtons {
+    display: flex;
+}
+
+#topLeftNav, #aboutNav, #skillsNav, #projectsNav, #recommendationsNav {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navBar">
+
+  <div class="Info">
+    <p class="topLeftName">Anjelo Jann Laroza</p>
+  </div>
+
+  <div class="navBarButtons">
+    <a href="index.html" id="topLeftNav">Home</a>
+    <a href="about.html" id="aboutNav">About</a>
+    <a href="skills.html" id="skillsNav">Skills</a>
+    <a href="projects.html" id="projectsNav">Projects</a>
+    <a href="recommendations.html" id="recommendationsNav">Recommendations</a>
+  </div>
+
+</nav>
+
+<main>
+  <div class="Intro">
+      <img src="./guy.png" width="300" height="280" alt="AnjeloPicture" class="AnjeloPicture">
+      <div class="IntroParagraph">
+          <h1 class="Hi">Hi, I'm Anjelo!</h1>
+          <h5 class="IntroText">
+          I’m Anjelo Jann Laroza, a Bachelor of Science in Information
+          Technology student at Mapúa University (Batch 2025) and an aspiring full-stack software engineer
+          specializing in data engineering and large language model (LLM) systems.
+          My journey into technology started with a strong foundation in programming,
+          databases, and software engineering fundamentals. Over time,
+          I expanded my skills across the full software development
+          lifecycle—from frontend design to backend services,
+          from database engineering to AI/LLM applications.
+          </h5>
+      </div>
+  </div>
+
+  <div class="Space">
+
+  </div>
+
+
+  <h2 class="SkillsText">Skills</h2>
+  <div class ="Skills">
+    <div class ="flex-item item-one">
+        <img src="./1702176771657.png" width="180" height="200" alt="FullStackPicture" class="FulLStackPicture">
+    </div>
+    <div class ="flex-item item-two">
+        <img src="./1.png" width="180" height="200" alt="DataEngineeringPicture">
+    </div>
+    <div class ="flex-item item-three">
+        <img src="./2.png" width="180" height="200" alt="AIandLLMPicture">
+    </div>
+    <div class ="flex-item item-four">
+        <img src="./3.png" width="180" height="200" alt="EngineeringPracticesPicture">
+    </div>
+  </div>
+
+    <div class ="Projects">
+        <h2 class="ProjectsText">Projects</h2>
+        <div class="ProjectsList">
+            <ul>
+                <h4>AnimeHub Web Application</h4>
+                <li>Full-stack web application for anime enthusiasts
+                Built with Flask, React, and PostgreSQL
+                Deployed on Heroku
+                eployed on Netlify</li>
+                <li>Data Cleaning and Preparation for Insurance Data</li>
+                <li>Real-time Multimodal AI Personalization/Recommender</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Recommendations">
+        <h2 class="RecommendationsText">Recommendations</h2>
+
+    </div>
+
+    <div class="RecommendationForm">
+        <h2 class="RecommendationFormText">Leave a recommendation!</h2>
+        <form action="/recommendation.js" method="post">
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+
+</main>
+
+</body>
+</html>
