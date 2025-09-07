@@ -16,7 +16,7 @@
 
   <div class="navBarButtons">
     <a href="index.html" id="topLeftNav">Home</a>
-    <a href="about.html" id="aboutNav">About</a>
+    <a href="../Dump/about.html" id="aboutNav">About</a>
     <a href="skills.html" id="skillsNav">Skills</a>
     <a href="projects.html" id="projectsNav">Projects</a>
     <a href="recommendations.html" id="recommendationsNav">Recommendations</a>
@@ -62,39 +62,56 @@
         <img src="./3.png" width="180" height="200" alt="EngineeringPracticesPicture">
     </div>
   </div>
-
+    <h2 class="ProjectsText">Projects</h2>
     <div class ="Projects">
-        <h2 class="ProjectsText">Projects</h2>
         <div class="ProjectsList">
-            <ul>
-                <h4>AnimeHub Web Application</h4>
+            <ul class="FirstProject">
+                <h4 class="BRUH">AnimeHub Web Application</h4>
                 <li>Full-stack web application for anime enthusiasts
-                Built with Flask, React, and PostgreSQL
+                Built with Flask, React, and PostgresSQL
                 Deployed on Heroku
-                eployed on Netlify</li>
-                <li>Data Cleaning and Preparation for Insurance Data</li>
-                <li>Real-time Multimodal AI Personalization/Recommender</li>
+                employed on Netlify</li>
+                <hr>
             </ul>
+            <ul class="SecondProject">
+                <h4 class="WE">Insurance Data Engineering</h4>
+                <li>Data engineering project for insurance company
+                Built with Python, SQL, and Docker
+                Deployed on AWS</li>
+                <hr>
+            </ul>
+            <ul class="ThirdProject">
+                <h4 class="XD">Real-time Multimodal AI Personalization/Recommender</h4>
+                <li>Personalized AI-powered multimodal recommender, built with Python, JavaScript/TypeScript, C++/C#, SQL/NoSQL, PyTorch, TensorFlow, OpenCV, YOLO, SAM2, Hugging Face, FFmpeg.
+                Deployed on AWS</li>
+            </ul>
+        </div>
         </div>
     </div>
 
+    <h2 class="RecommendationsText">Recommendations</h2>
     <div class="Recommendations">
-        <h2 class="RecommendationsText">Recommendations</h2>
+            <div class="Box1">
+            <p class="Box1Text"></p>
+            </div>
 
+            <div class="Box2">
+            <p class="Box2Text"></p>
+            </div>
+
+            <div class="Box3">
+            <p class="Box3Text"></p>
+            </div>
     </div>
-
+    <h2 class="RecommendationFormText">Leave a recommendation!</h2>
     <div class="RecommendationForm">
-        <h2 class="RecommendationFormText">Leave a recommendation!</h2>
-        <form action="/recommendation.js" method="post">
-            <fieldset>
+        <form action="/recommendation.js" method="post" class="FormField">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="message">Message</label>
-                <input type="text" name="message" id="message">
+                <input type="email" name="email" id="email"><br>
+                <textarea name="message" rows="10" cols="50" id="message">Message</textarea><br>
                 <input type="submit" value="Submit">
-            </fieldset>
         </form>
     </div>
 
