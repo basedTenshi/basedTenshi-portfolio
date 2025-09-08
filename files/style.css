@@ -61,10 +61,26 @@ body {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+
 }
 
 .flex-item {
-    border: 5px solid black;
+    border: 2px solid black;
+}
+.skillsOne {
+    box-shadow: 20px 20px 50px 15px grey;
+}
+
+.skillsTwo {
+    box-shadow: 20px 20px 50px 15px grey;
+}
+
+.skillsThree {
+    box-shadow: 20px 20px 50px 15px grey;
+}
+
+.skillsFour {
+    box-shadow: 20px 20px 50px 15px grey;
 }
 
 .Info {
@@ -127,26 +143,45 @@ body {
 }
 
 .Box1 {
-    border: 2px solid black;
+    border: 2px solid dimgrey;
     width: 200px;
     height: 100px;
     padding: 10px;
+}
+
+.Box1Text {
+    font-size: 10px;
 }
 
 .Box2 {
-    border: 2px solid black;
+    border: 2px solid dimgrey;
     width: 200px;
     height: 100px;
     padding: 10px;
+}
+
+.Box2Text {
+    font-size: 10px;
 }
 
 .Box3 {
-    border: 2px solid black;
+    border: 2px solid dimgrey;
     width: 200px;
     height: 100px;
     padding: 10px;
 }
 
-.FormField {
+.Box3Text {
+    font-size: 10px;
+}
 
+.FormField {
+    text-align: center;
+}
+
+.RecommendationSubmit {
+    color: white;
+    background-color: steelblue;
+    padding: 10px;
+    margin: 10px;
 }

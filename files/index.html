@@ -50,16 +50,24 @@
   <h2 class="SkillsText">Skills</h2>
   <div class ="Skills">
     <div class ="flex-item item-one">
-        <img src="./1702176771657.png" width="180" height="200" alt="FullStackPicture" class="FulLStackPicture">
+        <div class="skillsOne">
+            <img src="./1702176771657.png" width="180" height="200" alt="FullStackPicture" class="FulLStackPicture">
+        </div>
     </div>
     <div class ="flex-item item-two">
-        <img src="./1.png" width="180" height="200" alt="DataEngineeringPicture">
+        <div class="skillsTwo">
+            <img src="./1.png" width="180" height="200" alt="DataEngineeringPicture">
+        </div>
     </div>
     <div class ="flex-item item-three">
-        <img src="./2.png" width="180" height="200" alt="AIandLLMPicture">
+        <div class="skillsThree">
+            <img src="./2.png" width="180" height="200" alt="AIandLLMPicture">
+        </div>
     </div>
     <div class ="flex-item item-four">
-        <img src="./3.png" width="180" height="200" alt="EngineeringPracticesPicture">
+        <div class="skillsFour">
+            <img src="./3.png" width="180" height="200" alt="EngineeringPracticesPicture">
+        </div>
     </div>
   </div>
     <h2 class="ProjectsText">Projects</h2>
@@ -92,26 +100,23 @@
     <h2 class="RecommendationsText">Recommendations</h2>
     <div class="Recommendations">
             <div class="Box1">
-            <p class="Box1Text"></p>
+            <p class="Box1Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
             <div class="Box2">
-            <p class="Box2Text"></p>
+            <p class="Box2Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
             <div class="Box3">
-            <p class="Box3Text"></p>
+            <p class="Box3Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
     </div>
     <h2 class="RecommendationFormText">Leave a recommendation!</h2>
     <div class="RecommendationForm">
         <form action="/recommendation.js" method="post" class="FormField">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email"><br>
-                <textarea name="message" rows="10" cols="50" id="message">Message</textarea><br>
-                <input type="submit" value="Submit">
+                <textarea name="name" rows="1" cols="50" id="name" class="nameTextArea" placeholder="Name (Optional)"></textarea><br>
+                <textarea name="message" rows="10" cols="50" id="message" class="messageTextArea" placeholder="Message"></textarea><br>
+                <input type="submit" value="Submit" class="RecommendationSubmit">
         </form>
     </div>
 
