@@ -17,10 +17,10 @@
 
   <div class="navBarButtons">
     <a href="index.html" id="topLeftNav">Home</a>
-    <a href="../Dump/about.html" id="aboutNav">About</a>
-    <a href="skills.html" id="skillsNav">Skills</a>
-    <a href="projects.html" id="projectsNav">Projects</a>
-    <a href="recommendations.html" id="recommendationsNav">Recommendations</a>
+    <a href="#about" id="aboutNav">About</a>
+    <a href="#skills" id="skillsNav">Skills</a>
+    <a href="#projects" id="projectsNav">Projects</a>
+    <a href="#recommendations" id="recommendationsNav">Recommendations</a>
   </div>
 
 </nav>
@@ -29,7 +29,7 @@
   <div class="Intro">
       <img src="./guy.png" width="300" height="280" alt="AnjeloPicture" class="AnjeloPicture">
       <div class="IntroParagraph">
-          <h1 class="Hi">Hi, I'm Anjelo!</h1>
+          <h1 class="Hi" id="about">Hi, I'm Anjelo!</h1>
           <h5 class="IntroText">
           I’m Anjelo Jann Laroza, a Bachelor of Science in Information
           Technology student at Mapúa University (Batch 2025) and an aspiring full-stack software engineer
@@ -49,7 +49,7 @@
 
 
   <h2 class="SkillsText">Skills</h2>
-  <div class ="Skills">
+  <div class ="Skills" id="skills">
     <div class ="flex-item item-one">
         <div class="skillsOne">
             <img src="./1702176771657.png" width="180" height="200" alt="FullStackPicture" class="FulLStackPicture">
@@ -71,7 +71,7 @@
         </div>
     </div>
   </div>
-    <h2 class="ProjectsText">Projects</h2>
+    <h2 class="ProjectsText" id="projects">Projects</h2>
     <div class ="Projects">
         <div class="ProjectsList">
             <ul class="FirstProject">
@@ -95,12 +95,12 @@
                 Deployed on AWS</li>
             </ul>
         </div>
-        </div>
     </div>
+
 
     <h2 class="RecommendationsText">Recommendations</h2>
     <div class="Recommendations">
-            <div class="Box1">
+            <div class="Box1" id="recommendations">
             <p class="Box1Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
@@ -114,7 +114,7 @@
     </div>
     <h2 class="RecommendationFormText">Leave a recommendation!</h2>
     <div class="RecommendationForm">
-        <form action="/recommendation.js" method="post" class="FormField">
+        <form name ="recommendationform" method="post" onsubmit ="return recomHandle(event);" class="FormField">
                 <textarea name="name" rows="1" cols="50" id="name" class="nameTextArea" placeholder="Name (Optional)"></textarea><br>
                 <textarea name="message" rows="10" cols="50" id="message" class="messageTextArea" placeholder="Message"></textarea><br>
                 <input type="submit" value="Submit" class="RecommendationSubmit">
