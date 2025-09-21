@@ -1,17 +1,19 @@
 const form = document.getElementById("recommendationform");
 const submitMessage = document.getElementById("submitMessage");
-const recommendationContentName = document.getElementById("name");
 const recommendationContentMessage = document.getElementById("message");
+const boxes = document.querySelectorAll(".Box1, .Box2, .Box3")
 
-form.addEventListener("submit", function(submitLog) {})
-form.addEventListener("submit", function(submitLog) {})
+form.addEventListener("submit", submitLog)
+form.addEventListener("submit", recommendationAdd)
 
-const submitLog = event => {
+function submitLog(event) {
     submitMessage.textContent = "Form submitted!";
     event.preventDefault();
 
-};
+}
 
-const recommendationAdd = event => {
-    submitMessage.textContent = "Form submitted!";
+function recommendationAdd(event) {
+    boxes.forEach(box => {
+        box.textContent = recommendationContentMessage.value;
+    })
 }
