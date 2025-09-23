@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <script src="recommendationform.js"></script>
 </head>
 <body>
 
@@ -114,15 +113,15 @@
     </div>
     <h2 class="RecommendationFormText">Leave a recommendation!</h2>
     <div class="RecommendationForm">
-        <form name ="recommendationform" method="post" onsubmit ="return recomHandle(event);" class="FormField">
+        <form name ="recommendationform" id="recommendationform" method="post" onsubmit ="return submitLog();" class="FormField">
                 <textarea name="name" rows="1" cols="50" id="name" class="nameTextArea" placeholder="Name (Optional)"></textarea><br>
                 <textarea name="message" rows="10" cols="50" id="message" class="messageTextArea" placeholder="Message"></textarea><br>
                 <input type="submit" value="Submit" class="RecommendationSubmit">
-                <h5 id="submitMessage">asfafas</h5>
+                <h5 id="submitMessage"></h5>
         </form>
     </div>
 
 </main>
-
+<script src="script.js"></script>
 </body>
 </html>
